@@ -18,6 +18,30 @@ public class RadioTest {
         assertEquals(expect, actual);
     }
     @Test
+    void installNegativeCurrentStation() {
+        Radio radio = new Radio();
+
+        //station.currentRadioStation = 0;
+        radio.setCurrentRadioStation(-1);
+
+        int actual = radio.getCurrentRadioStation();//station.currentRadioStation;
+        int expect = 0;
+
+        assertEquals(expect, actual);
+    }
+    @Test
+    void installFalseCurrentStation() {
+        Radio radio = new Radio();
+
+        //station.currentRadioStation = 0;
+        radio.setCurrentRadioStation(10);
+
+        int actual = radio.getCurrentRadioStation();//station.currentRadioStation;
+        int expect = 0;
+
+        assertEquals(expect, actual);
+    }
+    @Test
     void installFirstStation() {
         Radio radio = new Radio();
 
