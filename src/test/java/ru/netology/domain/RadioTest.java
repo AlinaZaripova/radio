@@ -29,10 +29,11 @@ public class RadioTest {
 
     @ParameterizedTest
     @CsvSource({
-            "0,9",
+            "1,0",
             "2,1",
             "7,6",
-            "0,9"
+            "0,9",
+            "9,8"
     })
     void prevRadioStation(int newCurrentRadioStation, int expect) {
 
@@ -53,7 +54,10 @@ public class RadioTest {
             "6,6",
             "9,9",
             "-1,0",
-            "10,0"
+            "10,0",
+            "8,8",
+            "100,0",
+            "-100,0"
     })
     void currentRadioStation(int newCurrentRadioStation, int expect) {
 
@@ -72,7 +76,8 @@ public class RadioTest {
             "0,1",
             "1,2",
             "6,7",
-            "10,10"
+            "10,10",
+            "9,10"
     })
     void increaseVolume(int newCurrentVolume, int expect) {
 
