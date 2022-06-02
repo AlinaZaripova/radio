@@ -22,9 +22,8 @@ public class Radio {
 
         if (this.currentRadioStation == 9) {
             this.currentRadioStation = 0;
-        }
-        else {
-            this.currentRadioStation = this.currentRadioStation +1;
+        } else {
+            this.currentRadioStation = this.currentRadioStation + 1;
         }
 
     }
@@ -33,8 +32,7 @@ public class Radio {
 
         if (this.currentRadioStation == 0) {
             this.currentRadioStation = 9;
-        }
-        else{
+        } else {
             this.currentRadioStation = this.currentRadioStation - 1;
         }
 
@@ -57,8 +55,7 @@ public class Radio {
 
         if (this.currentVolume == 10) {
             this.currentVolume = 10;
-        }
-        else{
+        } else {
             this.currentVolume = this.currentVolume + 1;
         }
     }
@@ -67,9 +64,8 @@ public class Radio {
 
         if (this.currentVolume == 0) {
             this.currentVolume = 0;
-        }
-        else{
-            this.currentVolume = this.currentVolume -1;
+        } else {
+            this.currentVolume = this.currentVolume - 1;
         }
 
     }
